@@ -1,0 +1,38 @@
+{
+    "python.pythonPath": "/home/yangfan/miniconda3/envs/skycrawling/bin/python",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/__pycache__": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+    "python.languageServer": "None",
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": false,
+        "source.organizeImports": false
+    },
+    "search.exclude": {
+        "libstubs": true,
+        "venv": true
+    },
+    "files.watcherExclude": {
+        "**/.git": true,
+        "**/libstubs": true,
+        "**/we_work_sdk": true,
+    },
+    "editor.fontFamily": "Consolas, Monospace",
+    "editor.fontSize": 14,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+        {
+            "scope": "meta.function-call.generic.python",
+            "settings": {
+            "foreground": "#66D9EF",
+            }
+        },
+        ]
+    }
+}

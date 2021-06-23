@@ -1,0 +1,7 @@
+apache-skywalking[http]==0.6.0
+Flask==1.1.1
+Flask-SQLAlchemy==2.3.2
+PyMySQL==0.8.1
+SQLAlchemy==1.2.8
+typing-extensions==3.7.4.1
+sqlacodegen==2.3.0
