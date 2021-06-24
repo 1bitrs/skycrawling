@@ -1,6 +1,10 @@
+## Skycrawling
+Using skywalking in a flask application.  
+![Travis CI Status](https://travis-ci.com/yangfan9702/skycrawling.svg?branch=master)
+![Python Version](https://img.shields.io/badge/python-v3.7.9-brightgreen)
+![System Platform](https://img.shields.io/badge/platform-ubuntu-brightgreen.svg)
 
-
-### 安装Skywalking
+### 搭建Skywalking
 
 ```shell
 docker pull elasticsearch:6.8.16
