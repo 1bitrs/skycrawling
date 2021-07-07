@@ -27,7 +27,8 @@ class BaseModel(db.Model):
                 _k = change[k]
                 data[_k] = data[k]
                 del data[k]
-            if k in exclude:
+        for k in exclude:
+            if k in data.keys():
                 del data[k]
         data.update(extra)
         return data
@@ -37,6 +38,10 @@ class User(BaseModel):
     __tablename__ = 'user'
 
     name = Column(String(255), nullable=False)
-    create_at = Column(DateTime)
-    update_at = Column(DateTime)
-    is_deleted = Column(TINYINT(1))
+    create_at = Column(DateTime, default=datetime.now)
+    update_at = Column(DateTime, default=datetime.now, onupdate=datetime.now)
+    is_deleted = Column(TINYINT(1), default='0')
+
+    def __repr__(self) -> str:
+        return f'{self.name}, {self.is_deleted}, create at {self.create_at}, last update at {self.update_at}'
+    
